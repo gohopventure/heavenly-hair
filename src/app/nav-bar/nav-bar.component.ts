@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
+  svg = 'menu'
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  updateMenuIcon(): void {
+    this.svg == 'menu' ? this.svg = 'x' : this.svg = 'menu'
+  }
 }
