@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-  svg = 'menu'
+  mobileLinks:boolean = false;
+  menuIcon:boolean = false;
 
   constructor() { }
 
@@ -14,6 +15,7 @@ export class NavBarComponent implements OnInit {
   }
 
   updateMenuIcon(): void {
-    this.svg == 'menu' ? this.svg = 'x' : this.svg = 'menu'
+    this.mobileLinks =! this.mobileLinks
+    this.menuIcon =! this.menuIcon
   }
 }

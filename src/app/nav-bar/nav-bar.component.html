@@ -1,7 +1,20 @@
-<div class="nav navbar-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <h1>Heavenly Hair</h1>
-    <img src="../../assets/{{ svg }}.svg" (click)="updateMenuIcon()"/>
-    <ul class="links" hidden>
+<div>
+    <div class="nav navbar-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <h1>Heavenly Hair</h1>
+        <div class="menu-icon" [class.menuIcon]="menuIcon" (click)="updateMenuIcon()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="links">
+            <li><a routerLink="/">About</a></li>
+            <li><a routerLink="/">Book Now</a></li>
+            <li><a routerLink="/">Our Story</a></li>
+            <li><a routerLink="/">Join Us</a></li>
+            <li><a routerLink="/">Contact Us</a></li>
+        </ul>
+    </div>
+    <ul class="mobile-links" [class.mobileLinks]="mobileLinks">
         <li><a routerLink="/">About</a></li>
         <li><a routerLink="/">Book Now</a></li>
         <li><a routerLink="/">Our Story</a></li>
