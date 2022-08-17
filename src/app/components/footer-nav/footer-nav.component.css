@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.links a:hover {
+    color: aquamarine;
+    transition: 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 999px) {
+    .nav {
+        display: none;
+    }
+}
